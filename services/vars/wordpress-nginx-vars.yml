@@ -27,6 +27,6 @@ wordpress_version: '5.9.3'
 wordpress_password: "{{ password }}"
 # PhpMyAdmin vars
 # phpMyAdmin
-phpmyadmin_webserver: nginx
+phpmyadmin_webserver: "{{ service_webserver }}"
 phpmyadmin_mysql_password: "{{ password }}"
 phpmyadmin_version: '5.1.3'
