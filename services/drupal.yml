@@ -12,8 +12,8 @@
       when: ansible_distribution == 'Debian'
     # - role: ansible-common-role
     #   tags: molecule
-    - role: ansible-nginx-enable-letsencrypt-role
-      when: service_webserver == 'nginx'
+    # - role: ansible-nginx-enable-letsencrypt-role
+    #   when: service_webserver == 'nginx'
     - role: ansible-certbot-role
     - role: ansible-php-mysql-role
     - role: geerlingguy.git
@@ -22,4 +22,4 @@
     - role: ansible-drupal-role
     - role: ansible-mysql-role
     - role: ansible-apache-role
-      when: service_webserver == 'apache'
+      # when: service_webserver == 'apache'
